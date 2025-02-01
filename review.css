@@ -1,0 +1,128 @@
+.review{
+    margin-block: 50px;
+    padding: 120px 0;
+    position: relative;
+    background: rgb(233, 232, 232);
+    width: 100%;
+}
+
+.review-text-outline{
+    color: #ffffff;
+    text-shadow: rgb(180, 100, 0) 1px 0px 0px, rgb(180, 100, 0) 0.540302px 0.841471px 0px, rgb(180, 100, 0) -0.416147px 0.909297px 0px, rgb(180, 100, 0) -0.989992px 0.14112px 0px, rgb(180, 100, 3) -0.653644px -0.756802px 0px, rgb(180, 100, 6) 0.283662px -0.958924px 0px, rgb(180, 100, 0) 0.96017px -0.279415px 0px;
+    font-size: 150px;
+    line-height: 100%;
+}
+.review-text-line{
+    color: #000000;
+    font-size: 150px;
+    line-height: 100%;
+}
+
+.tag-list{
+    margin:0;
+    padding-inline: 0;
+    list-style: none;
+}
+.tag-list li{
+    /* background: aquamarine; */
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.scroller{
+    margin:auto;
+    position: absolute;
+    top: -90px;
+    width: 100%;
+    /* border: 2px solid goldenrod; */
+
+
+}
+
+.scroller[data-animated="true"] {
+    overflow: hidden;
+    /* mask: linear-gradient(90deg,transparent,white 20%, white 80%, transparent ); */
+
+}
+
+
+.scroller-inner{
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap:wrap;
+    gap: 1rem;
+
+}
+
+.scroller[data-animated="true"] .scroller-inner{
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll 30s linear infinite;
+
+
+    
+}
+
+@keyframes scroll {
+    to {
+        /* transform: translate(-50%); */
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+
+
+.review-slider-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-slider-nav img{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    /* filter: grayscale(100%); */
+}
+.review-nav-active{
+    filter: grayscale(100%);
+    transform: scale(1.2);
+}
+
+.review-container{
+    width: 540px;
+    margin: auto;
+    overflow: hidden;
+}
+#review-slider{
+    display: flex;
+    transition: 0.5s;
+    
+}
+
+.review-item{
+    min-width: 540px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+  
+}
+.review-item h4{
+    font-size: 38px;
+    line-height: 2.625rem;
+    margin-bottom: 20px;
+}   
+.review-item h5{
+    color: #d39121;
+    font-size: 20px;
+} 
+
+.review-item img{
+    width: 75px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+

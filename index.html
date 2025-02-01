@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="./output/tailwind.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dishes.css">
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    
+    <div class="banner">
+        <nav class="" >
+            <div class="flex  mx-auto p-4 justify-between items-center ">
+                <div>
+                    <img class="h-12" src="./images/demo-restaurant-logo-white@2x.png" alt="" srcset="">
+                </div>
+                <div>
+                    <ul class="flex nav-links text-white  justify-center items-center">
+                        <li><a class="nav-link" href="">HOME</a></li>
+                        <li><a class="nav-link" href="">ABOUT</a></li>
+                        <li><a class="nav-link" href="">MENU</a></li>
+                        <li><a class="nav-link" href="">STORY</a></li>
+                        <li><a class="nav-link" href="">GALLARY</a></li>
+                        <li><a class="nav-link" href="">CHEFS</a></li>
+                        <li><a class="nav-link" href="">BLOG</a></li>
+                        <li><a class="nav-link" href="">CONTACT</a></li>
+                    </ul>
+        
+                </div>
+                <div>
+                    <button class="px-5 py-1 rounded-full ring-1 ring-slate-50 text-white" >BOOK A TABLE</button>
+                </div>
+            </div>
+        </nav>
+        <div class="flex items-center justify-center">
+            <div class="banner-circle flex justify-center items-center">
+                <div class="text-center uppercase space-y-5">
+                    <p class="text-2xl exp-text">Experience the taste of italy</p>
+                    <div class="">
+                        <p class="text-outline">Great Dining</p>
+                        <p class="animate-text">Experience</p>
+                    </div>
+                    <button class="px-5 py-4 bg-gray-900 text-white rounded-md text-lg">Authentic Experience</button>
+                </div>
+                <img src="./images/demo-restaurant-home-01.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+
+    <section class="experience  m-auto" >
+        
+        <div class="exp-caption">experience</div>
+
+        <img class="exp-left-img" src="./images/demo-restaurant-home-02.jpg" alt="">
+        <img class="exp-right-img" src="./images/demo-restaurant-home-03.jpg" alt="">
+
+       
+        <div class="exp-content p-5">
+            <div class="exp-image p-8">
+                <img src="./images/demo-restaurant-home-04.png" alt="">
+            </div>
+            <div class="exp-data">
+                <h5><span class="line"></span> SINCE 1988</h5>
+                <h1 class="">Wonderful dining experience & food.</h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna minim veniam nostrud exercitation.</p>
+                
+                <div class="">
+                    <button class="px-5 py-4 bg-gray-900 text-white rounded-md text-lg mx-8">ABOUT RESTAURANT</button>
+                    <a class="text-2xl inline-block " href="tel:1800222000"> <i class="fa-solid fa-phone"></i> 1-800-222-000</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="exp-cards ">
+            <div class="exp-card " >
+                <div class="exp-card-icon-box flex justify-center items-center drop-shadow-lg">
+                    <i class="fa-solid fa-cube"></i>
+                </div>
+                <div class="flex  items-center p-5">
+                    <div class="">
+                        <h3>FAST DELIVERY</h3>
+                        <p>Within 30 minutes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="exp-card " >
+                <div class="exp-card-icon-box flex justify-center items-center drop-shadow-lg">
+                    <i class="fa-solid fa-certificate"></i>
+                </div>
+                <div class="flex  items-center p-5">
+                    <div class="">
+                        <h3>Absolute Dining</h3>
+                        <p>Best buffet restaurant</p>
+                    </div>
+                </div>
+            </div><div class="exp-card " >
+                <div class="exp-card-icon-box flex justify-center items-center drop-shadow-lg">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <div class="flex  items-center p-5">
+                    <div class="">
+                        <h3>Pickup DELIVERY</h3>
+                        <p>Grab your food order</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <section class="popular-menu">
+        <div class="section-header">
+            <h5>-CHOOSE DELICIOUS-</h5>
+            <h2>POPULAR MENU</h2>
+        </div>
+        <div class="">
+
+            <div class="tab menu-icons">
+            <button id="defaultOpen" class="tablinks" onclick="openMenu(event, 'Starters')"><i class="fa-solid fa-mug-hot"></i> Starters</button>
+            <button class="tablinks" onclick="openMenu(event, 'Nonvage')"><i class="fa-solid fa-drumstick-bite"></i> Nonvage</button>
+            <button class="tablinks" onclick="openMenu(event, 'Vegetarian')"><i class="fa-solid fa-seedling"></i> Vegetarian</button>
+            <button class="tablinks" onclick="openMenu(event, 'Dessert')"><i class="fa-solid fa-ice-cream"></i> Dessert</button>
+            <button class="tablinks" onclick="openMenu(event, 'Drinks')"><i class="fa-solid fa-ice-cream"></i> Drinks</button>
+            </div>
+
+            <div id="Starters" class="tabcontent">
+                <div class="menus">
+                    <div class="menu items-center">
+                        <div class="menu-img">
+                            <img class="rounded-full" src="./images/demo-restaurant-tab-01.jpg" alt="">
+                        </div>
+                        <div class="menu-data p-5">
+                            <div class="flex justify-between">
+                                <span>Boiled organic egg</span> 
+                                <span>--------------</span>
+                                <span>$12.00</span>
+                            </div>
+                            <p>Lorem ipsum has been the industry.</p>
+                        </div>
+                    </div>
+                    <div class="menu items-center">
+                        <div class="menu-img">
+                            <img class="rounded-full" src="./images/demo-restaurant-tab-02.jpg" alt="">
+                        </div>
+                        <div class="menu-data">
+                            <div>
+                                <span>Boiled organic egg</span> 
+                                <span>---------</span>
+                                <span>$12.00</span>
+                                <br>
+                                <p>Lorem ipsum has been the industry.</p>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="menu items-center">
+                        <div class="menu-img">
+                            <img class="rounded-full" src="./images/demo-restaurant-tab-03.jpg" alt="">
+                        </div>
+                        <div class="menu-data">
+                            <div>
+                                <span>Boiled organic egg</span> 
+                                <span>---------</span>
+                                <span>$12.00</span>
+                                <br>
+                                <p>Lorem ipsum has been the industry.</p>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="menu items-center">
+                        <div class="menu-img">
+                            <img class="rounded-full" src="./images/demo-restaurant-tab-04.jpg" alt="">
+                        </div>
+                        <div class="menu-data">
+                            <div>
+                                <span>Boiled organic egg</span> 
+                                <span>---------</span>
+                                <span>$12.00</span>
+                                <br>
+                                <p>Lorem ipsum has been the industry.</p>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="menu items-center">
+                        <div class="menu-img">
+                            <img class="rounded-full" src="./images/demo-restaurant-tab-05.jpg" alt="">
+                        </div>
+                        <div class="menu-data">
+                            <div>
+                                <span>Boiled organic egg</span> 
+                                <span>---------</span>
+                                <span>$12.00</span>
+                                <br>
+                                <p>Lorem ipsum has been the industry.</p>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="menu items-center">
+                        <div class="menu-img">
+                            <img class="rounded-full" src="./images/demo-restaurant-tab-06.jpg" alt="">
+                        </div>
+                        <div class="menu-data">
+                            <div>
+                                <span>Boiled organic egg</span> 
+                                <span>---------</span>
+                                <span>$12.00</span>
+                                <br>
+                                <p>Lorem ipsum has been the industry.</p>
+                            </div>
+                        </div>
+                    </div>   
+                </div>   
+            </div>
+
+            <div id="Nonvage" class="tabcontent">
+                <div class="menus">
+                    <div class="menu items-center">
+                        <div class="menu-img">
+                            <img class="rounded-full" src="./images/demo-restaurant-tab-06.jpg" alt="">
+                        </div>
+                        <div class="menu-data p-5">
+                            <div class="flex justify-between">
+                                <span>Boiled organic egg</span> 
+                                <span>--------------</span>
+                                <span>$12.00</span>
+                            </div>
+                            <p>Lorem ipsum has been the industry.</p>
+                        </div>
+                    </div>
+                    <div class="menu items-center">
+                        <div class="menu-img">
+                            <img class="rounded-full" src="./images/demo-restaurant-tab-05.jpg" alt="">
+                        </div>
+                        <div class="menu-data">
+                            <div>
+                                <span>Boiled organic egg</span> 
+                                <span>---------</span>
+                                <span>$12.00</span>
+                                <br>
+                                <p>Lorem ipsum has been the industry.</p>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="menu items-center">
+                        <div class="menu-img">
+                            <img class="rounded-full" src="./images/demo-restaurant-tab-04.jpg" alt="">
+                        </div>
+                        <div class="menu-data">
+                            <div>
+                                <span>Boiled organic egg</span> 
+                                <span>---------</span>
+                                <span>$12.00</span>
+                                <br>
+                                <p>Lorem ipsum has been the industry.</p>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="menu items-center">
+                        <div class="menu-img">
+                            <img class="rounded-full" src="./images/demo-restaurant-tab-01.jpg" alt="">
+                        </div>
+                        <div class="menu-data">
+                            <div>
+                                <span>Boiled organic egg</span> 
+                                <span>---------</span>
+                                <span>$12.00</span>
+                                <br>
+                                <p>Lorem ipsum has been the industry.</p>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="menu items-center">
+                        <div class="menu-img">
+                            <img class="rounded-full" src="./images/demo-restaurant-tab-03.jpg" alt="">
+                        </div>
+                        <div class="menu-data">
+                            <div>
+                                <span>Boiled organic egg</span> 
+                                <span>---------</span>
+                                <span>$12.00</span>
+                                <br>
+                                <p>Lorem ipsum has been the industry.</p>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="menu items-center">
+                        <div class="menu-img">
+                            <img class="rounded-full" src="./images/demo-restaurant-tab-02.jpg" alt="">
+                        </div>
+                        <div class="menu-data">
+                            <div>
+                                <span>Boiled organic egg</span> 
+                                <span>---------</span>
+                                <span>$12.00</span>
+                                <br>
+                                <p>Lorem ipsum has been the industry.</p>
+                            </div>
+                        </div>
+                    </div>   
+                </div> 
+            </div>
+
+            <div id="Tokyo" class="tabcontent">
+                <div class="menus">
+                    <div class="menu items-center">
+                        <div class="menu-img">
+                            <img class="rounded-full" src="./images/demo-restaurant-tab-01.jpg" alt="">
+                        </div>
+                        <div class="menu-data p-5">
+                            <div class="flex justify-between">
+                                <span>Boiled organic egg</span> 
+                                <span>--------------</span>
+                                <span>$12.00</span>
+                            </div>
+                            <p>Lorem ipsum has been the industry.</p>
+                        </div>
+                    </div>
+                    <div class="menu items-center">
+                        <div class="menu-img">
+                            <img class="rounded-full" src="./images/demo-restaurant-tab-02.jpg" alt="">
+                        </div>
+                        <div class="menu-data">
+                            <div>
+                                <span>Boiled organic egg</span> 
+                                <span>---------</span>
+                                <span>$12.00</span>
+                                <br>
+                                <p>Lorem ipsum has been the industry.</p>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="menu items-center">
+                        <div class="menu-img">
+                            <img class="rounded-full" src="./images/demo-restaurant-tab-03.jpg" alt="">
+                        </div>
+                        <div class="menu-data">
+                            <div>
+                                <span>Boiled organic egg</span> 
+                                <span>---------</span>
+                                <span>$12.00</span>
+                                <br>
+                                <p>Lorem ipsum has been the industry.</p>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="menu items-center">
+                        <div class="menu-img">
+                            <img class="rounded-full" src="./images/demo-restaurant-tab-04.jpg" alt="">
+                        </div>
+                        <div class="menu-data">
+                            <div>
+                                <span>Boiled organic egg</span> 
+                                <span>---------</span>
+                                <span>$12.00</span>
+                                <br>
+                                <p>Lorem ipsum has been the industry.</p>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="menu items-center">
+                        <div class="menu-img">
+                            <img class="rounded-full" src="./images/demo-restaurant-tab-05.jpg" alt="">
+                        </div>
+                        <div class="menu-data">
+                            <div>
+                                <span>Boiled organic egg</span> 
+                                <span>---------</span>
+                                <span>$12.00</span>
+                                <br>
+                                <p>Lorem ipsum has been the industry.</p>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="menu items-center">
+                        <div class="menu-img">
+                            <img class="rounded-full" src="./images/demo-restaurant-tab-06.jpg" alt="">
+                        </div>
+                        <div class="menu-data">
+                            <div>
+                                <span>Boiled organic egg</span> 
+                                <span>---------</span>
+                                <span>$12.00</span>
+                                <br>
+                                <p>Lorem ipsum has been the industry.</p>
+                            </div>
+                        </div>
+                    </div>   
+                </div> 
+            </div>
+        </div>
+        
+    </section>
+
+
+<section id="popular-dishes">
+  <div class="section-header">
+    <h5>-SPECIAL CHOOSE-</h5>
+    <h2>POPULAR CHOICE</h2>
+  </div>
+
+    <div class="slider-container">
+        <div id="slider-1" class="dishes-slider">
+            
+            <div class="slider-card">
+                <div class="slider-image-div">
+                    <img class="" src="./images/demo-restaurant-slider-01.jpg" alt="Dish 1">
+                    <div class="overlay flex justify-center items-center">
+                        <div class="overlay-text flex justify-center items-center">
+                            <div class="">
+                                <p>JUST</p>
+                                <p>$35.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-card-text text-center">
+                    <h6 class="">Chicken Brest Burger</h6>
+                    <p>Mashroom ◍ Cheese ◍ Tomatos</p>
+                </div>
+            </div><div class="slider-card">
+                <div class="slider-image-div">
+                    <img class="" src="./images/demo-restaurant-slider-02.jpg" alt="Dish 2">
+                    <div class="overlay flex justify-center items-center">
+                        <div class="overlay-text flex justify-center items-center">
+                            <div class="">
+                                <p>JUST</p>
+                                <p>$35.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-card-text text-center">
+                    <h6 class="">Chicken Brest Burger</h6>
+                    <p>Mashroom ◍ Cheese ◍ Tomatos</p>
+                </div>
+            </div><div class="slider-card">
+                <div class="slider-image-div">
+                    <img class="" src="./images/demo-restaurant-slider-03.jpg" alt="Dish 3">
+                    <div class="overlay flex justify-center items-center">
+                        <div class="overlay-text flex justify-center items-center">
+                            <div class="">
+                                <p>JUST</p>
+                                <p>$35.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-card-text text-center">
+                    <h6 class="">Chicken Brest Burger</h6>
+                    <p>Mashroom ◍ Cheese ◍ Tomatos</p>
+                </div>
+            </div><div class="slider-card">
+                <div class="slider-image-div">
+                    <img class="" src="./images/demo-restaurant-slider-04.jpg" alt="Dish 4">
+                    <div class="overlay flex justify-center items-center">
+                        <div class="overlay-text flex justify-center items-center">
+                            <div class="">
+                                <p>JUST</p>
+                                <p>$35.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-card-text text-center">
+                    <h6 class="">Chicken Brest Burger</h6>
+                    <p>Mashroom ◍ Cheese ◍ Tomatos</p>
+                </div>
+            </div><div class="slider-card">
+                <div class="slider-image-div">
+                    <img class="" src="./images/demo-restaurant-slider-05.jpg" alt="Dish 5">
+                    <div class="overlay flex justify-center items-center">
+                        <div class="overlay-text flex justify-center items-center">
+                            <div class="">
+                                <p>JUST</p>
+                                <p>$35.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-card-text text-center">
+                    <h6 class="">Chicken Brest Burger</h6>
+                    <p>Mashroom ◍ Cheese ◍ Tomatos</p>
+                </div>
+            </div>
+        </div>
+        <div id="slider-2" class="dishes-slider">
+            
+            <div class="slider-card">
+                <div class="slider-image-div">
+                    <img class="" src="./images/demo-restaurant-slider-01.jpg" alt="Dish 1">
+                    <div class="overlay flex justify-center items-center">
+                        <div class="overlay-text flex justify-center items-center">
+                            <div class="">
+                                <p>JUST</p>
+                                <p>$35.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-card-text text-center">
+                    <h6 class="">Chicken Brest Burger</h6>
+                    <p>Mashroom ◍ Cheese ◍ Tomatos</p>
+                </div>
+            </div><div class="slider-card">
+                <div class="slider-image-div">
+                    <img class="" src="./images/demo-restaurant-slider-02.jpg" alt="Dish 2">
+                    <div class="overlay flex justify-center items-center">
+                        <div class="overlay-text flex justify-center items-center">
+                            <div class="">
+                                <p>JUST</p>
+                                <p>$35.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-card-text text-center">
+                    <h6 class="">Chicken Brest Burger</h6>
+                    <p>Mashroom ◍ Cheese ◍ Tomatos</p>
+                </div>
+            </div><div class="slider-card">
+                <div class="slider-image-div">
+                    <img class="" src="./images/demo-restaurant-slider-03.jpg" alt="Dish 3">
+                    <div class="overlay flex justify-center items-center">
+                        <div class="overlay-text flex justify-center items-center">
+                            <div class="">
+                                <p>JUST</p>
+                                <p>$35.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-card-text text-center">
+                    <h6 class="">Chicken Brest Burger</h6>
+                    <p>Mashroom ◍ Cheese ◍ Tomatos</p>
+                </div>
+            </div><div class="slider-card">
+                <div class="slider-image-div">
+                    <img class="" src="./images/demo-restaurant-slider-04.jpg" alt="Dish 4">
+                    <div class="overlay flex justify-center items-center">
+                        <div class="overlay-text flex justify-center items-center">
+                            <div class="">
+                                <p>JUST</p>
+                                <p>$35.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-card-text text-center">
+                    <h6 class="">Chicken Brest Burger</h6>
+                    <p>Mashroom ◍ Cheese ◍ Tomatos</p>
+                </div>
+            </div><div class="slider-card">
+                <div class="slider-image-div">
+                    <img class="" src="./images/demo-restaurant-slider-05.jpg" alt="Dish 5">
+                    <div class="overlay flex justify-center items-center">
+                        <div class="overlay-text flex justify-center items-center">
+                            <div class="">
+                                <p>JUST</p>
+                                <p>$35.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-card-text text-center">
+                    <h6 class="">Chicken Brest Burger</h6>
+                    <p>Mashroom ◍ Cheese ◍ Tomatos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="review">
+    <div class="scroller">
+        <ul class="tag-list scroller-inner">
+            <li class="review-text-line">AWESOME</li>
+            <li class="review-text-outline">EXPERIENCE</li>
+            <li class="review-text-line">CUISINE</li>
+            <li class="review-text-outline">DELICIOUS</li>
+        </ul>
+    </div>
+
+    <div class="review-container">
+        <div id="review-slider">
+            <div class="review-item">
+                <img class="rounded-full" src="./images/demo-restaurant-home-quotes-icon.jpg" alt="">
+                <h4>
+                    Food for us comes from our relatives whether they have wings or fins or roots that is how we consider food has a culture It has history it has a story it has relationships.
+                </h4>
+                <h5>Harman Miller</h5>
+            </div>
+            <div class="review-item">
+                <img class="rounded-full" src="./images/demo-restaurant-home-quotes-icon.jpg" alt="">
+                <h4>
+                    Food for us comes from our relatives whether they have wings or fins or roots that is how we consider food has a culture It has history it has a story it has relationships.
+                </h4>
+                <h5>Marrhew Taylor</h5>
+            </div>
+            <div class="review-item">
+                <img class="rounded-full" src="./images/demo-restaurant-home-quotes-icon.jpg" alt="">
+                <h4>
+                    Food for us comes from our relatives whether they have wings or fins or roots that is how we consider food has a culture It has history it has a story it has relationships.
+                </h4>
+                <h5>Leonel Mooney</h5>
+            </div>
+        </div>
+    </div>
+    <div class="review-slider-nav ">
+        <div id="review-nav-1" class="review-slider-nav-item">
+            <img id="review-nav-1-img" class="" src="./images/avtar-33.jpg" alt="">
+        </div>
+        <div id="review-nav-2" class="review-slider-nav-item">
+            <img id="review-nav-2-img" class="" src="./images/avtar-34.jpg" alt="">
+        </div>
+        <div id="review-nav-3" class="review-slider-nav-item">
+            <img id="review-nav-3-img" class="" src="./images/avtar-35.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+
+
+<script src="dishesSlider.js"></script>
+<script src="review.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

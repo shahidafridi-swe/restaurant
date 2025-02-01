@@ -1,0 +1,136 @@
+#popular-dishes{
+    padding: 100px 0px;
+}
+
+.slider-container{
+    /* border: 1px solid gray; */
+    margin-top: 50px !important;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    gap: 0;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 10% 90%,
+        transparent
+    );
+}
+
+.dishes-slider{
+    display: flex;
+    width: 90%;
+    /* overflow-x: auto; */
+    margin: auto;
+    gap: 30px;
+    transition: 1s;
+
+    
+}
+
+#slider-1{
+    transform: translate(-150px);
+    /* transform: translate(-480px); */
+    /* transform: translate(-810px); */
+    /* transform: translate(-1140px); */
+    /* transform: translate(-1470px); */
+    /* transform: translate(-1800px); */
+    /* transform: translate(-2130px); */
+
+}
+#slider-2{
+    transform: translate(305px);
+    /* transform: translate(-25px); */
+    /* transform: translate(-355px); */
+    /* transform: translate(-685px); */
+    /* transform: translate(-1015px); */
+    /* transform: translate(-1345px); */
+    /* transform: translate(-1675px); */
+
+}
+.slider-card{
+    min-width: 300px;
+    height: 300px;
+    transition: 1s;
+
+}
+.slider-image-div{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    top:0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.623);
+    opacity: 0;
+    transition: .5s ease;
+
+}
+
+.overlay-text{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(218, 11, 11);
+    margin-bottom: -100px;
+	transition: .5s ease-in-out;
+
+    
+
+}
+.overlay-text p{
+    line-height: 30px;
+}
+
+.slider-card img{
+    /* width: 300px; */
+
+    border-radius: 10px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+
+}
+
+.slider-card:hover img{
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.slider-card:hover .overlay{
+   opacity: 1;
+   transition: .5s ease;
+   
+}
+.slider-card:hover .overlay-text{
+    margin-bottom: 0;
+}
+
+
+.dishes-slider:-webkit-scrollbar {
+    display: none;
+}  
+.dishes-slider {
+-ms-overflow-style: none;  
+scrollbar-width: none;  
+}
+
+.slider-card-text h6{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #383632;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.slider-card-text p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #8d8987;
+}

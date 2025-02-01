@@ -1,0 +1,289 @@
+
+
+body {
+    font-family: "Bebas Neue", sans-serif;
+    position: relative;
+}  
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+h5{
+    color: #d51f0f;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: "Schibsted Grotesk", serif;
+}
+
+.nav-link{
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px 20px;
+}
+.banner{
+    background-image: url("./images/demo-restaurant-home-banner-bg.jpg");
+    height: 700px;
+    background-repeat:inherit;
+    background-position: 0;
+    background-attachment: fixed;
+    position: relative;
+   
+}
+
+
+
+.banner-circle{
+    height: 700px;
+    width: 700px;
+    border-radius: 50%;
+    background-color: #d39121;
+    background-image: url(./images/demo-restaurant-home-banner-pattern.png);
+    background-repeat: repeat;
+    position: absolute;
+    top: 0;
+    
+}
+.banner-circle img{
+    position: absolute;
+    bottom: 50px;
+    right: -50px;
+}
+
+.text-outline{
+    color: #d39121;
+    text-shadow: rgb(255, 255, 255) 1px 0px 0px, rgb(255, 255, 255) 0.540302px 0.841471px 0px, rgb(255, 255, 255) -0.416147px 0.909297px 0px, rgb(255, 255, 255) -0.989992px 0.14112px 0px, rgb(255, 255, 255) -0.653644px -0.756802px 0px, rgb(255, 255, 255) 0.283662px -0.958924px 0px, rgb(255, 255, 255) 0.96017px -0.279415px 0px;
+    font-size: 6.875rem;
+    line-height: 100%;
+
+}
+
+.animate-text{
+    font-size: 6.875rem;
+    line-height: 100%;
+
+    color: white;
+    line-height: 100px;
+
+}
+
+
+
+
+.experience {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    padding: 20px;
+}
+
+.exp-caption{
+
+    position: absolute;
+    text-align: center;
+    top: -90px;
+    font-size: 21.875rem;
+    line-height: 21.875rem;
+    color: #8d89874b;
+}
+
+.exp-left-img{
+    position: absolute;
+    top: 60%;
+    left: -100px;
+    z-index: -2;
+
+}
+
+
+.exp-right-img{
+    position: absolute;
+    z-index: -1;
+    top: 10%;
+    right:-100px;
+    width: 21%;
+}
+
+
+.exp-content{
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    
+}
+
+.exp-image{
+    justify-content: center;
+    align-content: center;
+    z-index: 11;
+
+}
+
+.exp-image img{
+    width: 100%;
+}
+
+.exp-data{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-gap: 25px;
+}
+.line {
+    height: 2px;
+    width: 72px;
+    background-color: #d51f0f;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.exp-data h1{
+    font-size: 4.375rem;
+    line-height: 4rem;
+    color: #383632;
+}
+
+.exp-data p{
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 25;
+    width: 90%;
+    color: #8d8987;
+}
+
+.my-btn{
+
+}
+
+
+.exp-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    grid-gap: 10px;
+    margin-bottom: 50px;
+
+}
+
+.exp-card{
+    display: flex;
+    padding: 0 20px;
+
+}
+
+.exp-card-icon-box{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, .08);
+    text-align: center;
+}
+.exp-card-icon-box i{
+    font-size: 34px;
+    line-height: 30px;
+    color: #383632;
+
+}
+
+.exp-card h3{
+    font-size: 26px;
+    line-height: 38px;
+    color: #383632;
+}
+.exp-card p{
+    font-size: 17px;
+    line-height: 22px;
+    color: #8d8987;
+}
+
+
+/* Popular menu start */
+.popular-menu{
+    background-image: url(./images/demo-restaurant-home-05.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 75px;
+}
+
+.section-header{
+    text-align: center;
+}
+.section-header h5{
+    margin-bottom: 10px;
+    font-family: "Schibsted Grotesk", serif;
+}
+.section-header h2{
+    color: #383632;
+    line-height: 3.2rem;
+    font-size: 4.438rem;
+}
+
+.menu-icons{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+}
+
+
+.menu-icons button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #8d8987;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+
+}
+.menu-icons button i{
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+}
+.menus{
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    grid-gap: 30px;   
+}
+.menu{
+    display: flex;
+}
+.menu-data{
+    width: 100%;
+    padding: 20px;
+}
+
+.menu-data span{
+    font-size: 18px;
+}
+
+.tab {
+    overflow: hidden;f1;
+}
+
+
+.tab button:hover {
+border-bottom: 2px solid black;
+
+}
+
+.tab button.active {
+border-bottom: 2px solid black;
+}
+
