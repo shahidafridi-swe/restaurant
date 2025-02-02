@@ -84,11 +84,16 @@
     margin: 10px;
     border-radius: 50%;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+    
+}
+.review-nav-inactive{
+    filter: grayscale(100%);
+    transform: scale(1);
 
-    /* filter: grayscale(100%); */
 }
 .review-nav-active{
-    filter: grayscale(100%);
+    filter: grayscale(0%);
     transform: scale(1.2);
 }
 
@@ -126,3 +131,30 @@
     margin-bottom: 30px;
 }
 
+
+
+.ratings-part{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    bottom: -30px;
+    padding: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+}
+
+.stars{
+    color: white;
+    background-color: #d39121;
+    border-radius: 20px;
+    padding: 0 10px;
+    margin-right: 10px;
+}
+.ratings{
+    text-decoration-line: underline;
+    font-weight: bold;
+}

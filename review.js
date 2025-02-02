@@ -37,6 +37,9 @@ function reviewSlider(n){
     // document.getElementById("review-nav-1-img").style.filter=`grayscale(100%)`
     // document.getElementById("review-nav-2-img").style.filter=`grayscale(100%)`
     // document.getElementById("review-nav-3-img").style.filter=`grayscale(100%)`
+    if ( document.querySelector(".review-nav-active" ) != null ){
+        document.querySelector(".review-nav-active").classList.remove("review-nav-active")
+    }
 
     if (n===1){
         reviewSliderDiv.style.marginLeft=`0px`;

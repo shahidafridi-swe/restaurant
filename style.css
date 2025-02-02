@@ -26,7 +26,7 @@ h5{
 }
 .banner{
     background-image: url("./images/demo-restaurant-home-banner-bg.jpg");
-    height: 700px;
+    height: 100vh;
     background-repeat:inherit;
     background-position: 0;
     background-attachment: fixed;
@@ -44,7 +44,7 @@ h5{
     background-image: url(./images/demo-restaurant-home-banner-pattern.png);
     background-repeat: repeat;
     position: absolute;
-    top: 0;
+    top: 25%;
     
 }
 .banner-circle img{
@@ -78,10 +78,11 @@ h5{
     overflow: hidden;
     z-index: 0;
     padding: 20px;
+    margin: auto;
 }
 
 .exp-caption{
-
+    margin: auto;
     position: absolute;
     text-align: center;
     top: -90px;
