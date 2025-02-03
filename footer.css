@@ -1,0 +1,65 @@
+footer{
+    background-image: url(./images/demo-restaurant-home-footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding: 100px 0 0;
+    font-family:'Schibsted Grotesk', sans-serif;
+
+}
+
+.footer-items{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px 0;
+    padding-top: 100px;
+}
+.footer-item{
+    text-align: center;
+    width: 13%;
+    padding: 20px;
+    color: #383632;
+}
+.footer-item i{
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+.footer-item h6{
+    font-size: 15px;
+    font-weight: 700px;
+
+}
+.footer-item p{
+    line-height: 30px;
+
+    font-size: 17px;
+    color: #8d8987;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 1220px;
+    color: #8d8987;
+    font-size: 15px;
+    height: 100px;
+    padding: 25px 15px;
+
+}
+.footer-social-icon ul {
+    display: flex;
+    gap: 10px;
+    font-size: 17px;
+}
+.footer-nav span, i{
+    color: #383632;
+
+}
+.footer-nav span{
+    text-decoration: underline;
+    font-weight: bold;
+}
+

@@ -1,6 +1,18 @@
+@media all and (max-width: 1024px) {
+    .exp-left-img{
+        display: none;
+    }
+
+}
+
 @media all and (max-width: 768px) {
+    
     .nav-links{
         display: none;
+    }
+    .banner-section{
+        height: 90vh;
+
     }
     .banner{
         overflow: hidden;
@@ -8,7 +20,6 @@
     .banner-circle{
         height: 550px;
         width: 550px;
-        top: 20%
     }
     .animate-text .text-outline{
         font-size: 96px;
@@ -40,16 +51,32 @@
 
 }
 @media all and (max-width: 576px) {
+    .banner-section{
+        height: 70vh;
+
+    }
+    .nav-div{
+        padding: 0 20px;
+    }
+    .banner{
+
+    }
     .banner-circle img{
         display: none;
     }
     .banner-circle{
-        height: 450px;
-        width: 450px;
-        top:25%;
+        height: 320px;
+        width: 320px;
+    }
+    .exp-text{
+        font-size: 17px;
+        margin-bottom: 10px;
     }
     .animate-text {
         font-size: 60px;
+    }
+    .banner button{
+        margin-top: 10px;
     }
 
     .text-outline{
@@ -65,6 +92,13 @@
         padding: 0;
     }
 
+    .menu{
+        flex-direction: column;
+        align-items: start;
+    }
+    .menu-data{
+        padding-inline: 0;
+    }
     .menu-icons{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -80,28 +114,51 @@
     .menus{
         padding: 0;
     }
+    .exp-btn-card{
+        flex-direction: column;
+        align-items: start;
+    }
+    .exp-cards{
+        padding: 0;
+    }
     
 
 }
 @media all and (max-width: 320px) {
     .banner-circle{
-        height: 350px;
-        width: 350px;
+        height: 320px;
+        width: 320px;
     }
     .animate-text{
         font-size: 60px;
+        line-height: 70px;
+
     }
 
     .text-outline{
         font-size: 60px;
+        line-height: 70px;
 
     }
     .exp-text{
         font-size: 17px;
+        margin-bottom: 10px;
+
     }
     .menu{
-        flex-direction: row;
+        flex-direction: column;
+        align-items: start;
+    }
+    .menu-data{
+        padding-inline: 0;
     }
 
+    .exp-btn-card{
+        flex-direction: column;
+        align-items: start;
+    }
+    .exp-cards{
+        padding: 0;
+    }
 
 }

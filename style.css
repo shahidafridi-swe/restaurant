@@ -5,12 +5,6 @@ body {
     position: relative;
 }  
 
-nav{
-    position: sticky;
-    top: 0;
-    z-index: 99;
-}
-
 h5{
     color: #d51f0f;
     font-size: 15px;
@@ -19,22 +13,45 @@ h5{
     font-family: "Schibsted Grotesk", serif;
 }
 
+
+nav{
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-div{
+    width: 100%;
+    padding: 0 50px;
+}
+
+
 .nav-link{
     font-size: 20px;
     line-height: 20px;
     padding: 10px 20px;
 }
-.banner{
+.banner-section{
     background-image: url("./images/demo-restaurant-home-banner-bg.jpg");
     height: 100vh;
-    background-repeat:inherit;
-    background-position: 0;
+    /* background-repeat:inherit;
+    background-position: 0; */
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
     background-attachment: fixed;
     position: relative;
-   
 }
 
-
+.banner{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .banner-circle{
     height: 700px;
@@ -43,14 +60,31 @@ h5{
     background-color: #d39121;
     background-image: url(./images/demo-restaurant-home-banner-pattern.png);
     background-repeat: repeat;
-    position: absolute;
-    top: 25%;
+    position: relative;
     
 }
 .banner-circle img{
     position: absolute;
     bottom: 50px;
     right: -50px;
+    animation: move_banner_image 2s linear .5s infinite alternate both;
+    /* animation-name: move_banner_image;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; */
+
+}
+
+@keyframes move_banner_image {
+    /* 0%   {bottom: 50px;}
+    50%  {bottom: 55px;}
+    100% {bottom: 60px;} */
+    0%   {transform: translateY(0);}
+    50%   {transform: translateY(5px);}
+    100%   {transform: translateY(10px);}
+}
+
+.exp-text{
+    margin-bottom: 20px;
 }
 
 .text-outline{
@@ -58,27 +92,25 @@ h5{
     text-shadow: rgb(255, 255, 255) 1px 0px 0px, rgb(255, 255, 255) 0.540302px 0.841471px 0px, rgb(255, 255, 255) -0.416147px 0.909297px 0px, rgb(255, 255, 255) -0.989992px 0.14112px 0px, rgb(255, 255, 255) -0.653644px -0.756802px 0px, rgb(255, 255, 255) 0.283662px -0.958924px 0px, rgb(255, 255, 255) 0.96017px -0.279415px 0px;
     font-size: 6.875rem;
     line-height: 100%;
-
 }
 
 .animate-text{
     font-size: 6.875rem;
-    line-height: 100%;
-
     color: white;
     line-height: 100px;
 
 }
-
-
-
+.banner button{
+    margin-top: 50px;
+}
 
 .experience {
     position: relative;
     overflow: hidden;
     z-index: 0;
-    padding: 20px;
+    padding: 100px 20px;
     margin: auto;
+    width: 100%;
 }
 
 .exp-caption{
@@ -89,6 +121,8 @@ h5{
     font-size: 21.875rem;
     line-height: 21.875rem;
     color: #8d89874b;
+    width: 100%;
+
 }
 
 .exp-left-img{
@@ -102,7 +136,7 @@ h5{
 
 .exp-right-img{
     position: absolute;
-    z-index: -1;
+    z-index: -1 !important;
     top: 10%;
     right:-100px;
     width: 21%;
@@ -110,6 +144,8 @@ h5{
 
 
 .exp-content{
+    max-width: 1440px !important;
+    margin: auto;
     display: grid;
     grid-template-columns: 7fr 5fr;
     
@@ -154,11 +190,12 @@ h5{
     width: 90%;
     color: #8d8987;
 }
-
-.my-btn{
-
+.exp-btn-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
 }
-
 
 .exp-cards{
     display: grid;
@@ -166,12 +203,15 @@ h5{
     justify-content: center;
     grid-gap: 10px;
     margin-bottom: 50px;
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 30px;
 
 }
 
 .exp-card{
     display: flex;
-    padding: 0 20px;
+    padding: 0 0px;
 
 }
 
@@ -198,6 +238,7 @@ h5{
     font-size: 17px;
     line-height: 22px;
     color: #8d8987;
+    font-family: 'Schibsted Grotesk', sans-serif;
 }
 
 
@@ -220,6 +261,11 @@ h5{
     color: #383632;
     line-height: 3.2rem;
     font-size: 4.438rem;
+}
+
+.menu-div{
+    max-width: 1440px;
+    margin: auto;
 }
 
 .menu-icons{
@@ -259,19 +305,37 @@ h5{
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 50px;
+    padding: 50px ;
     grid-gap: 30px;   
+    transition: 1s ease-in-out;
+
+
 }
 .menu{
     display: flex;
+    transition: 0.5s ease-in-out;
+
 }
-.menu-data{
-    width: 100%;
-    padding: 20px;
+.menu:hover{
+    margin-left: 20px;
+    margin-right: -20px;
 }
 
-.menu-data span{
+.menu-data{
+    width: 100%;
+    padding: 20px 30px;
     font-size: 18px;
+    color: #383632;
+    font-family: "Schibsted Grotesk", serif;
+    font-weight: 500;
+
+}
+
+.menu-data p{
+    font-size: 17px;
+    color: #8d8987;
+    font-weight: 400;
+
 }
 
 .tab {
@@ -280,11 +344,26 @@ h5{
 
 
 .tab button:hover {
-border-bottom: 2px solid black;
+    border-bottom: 2px solid black;
 
+
+}
+.tab button i{
+    transition: all 0.3s ease-in-out;
+}
+
+.tab button:hover i, .tab button.active i{
+    color: #d39121;
+    scale: 1.1;
 }
 
 .tab button.active {
-border-bottom: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
+.dashed_line{
+    border-top: 1px dashed black;
+    /* width: 30px; */
+    flex-grow: 1;
+    margin: 0 20px;
+}
