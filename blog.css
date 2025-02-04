@@ -5,8 +5,9 @@
 
 .articles{
     margin: auto;
-    display: flex;
-    max-width: 1080px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1140px;
     gap: 10px;
     margin-top: 50px;
 }

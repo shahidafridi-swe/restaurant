@@ -14,7 +14,7 @@ h5{
 }
 
 
-nav{
+#nav{
     position: absolute;
     top: 0;
     z-index: 99;
@@ -22,12 +22,31 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px 10px;
+    transition: 1s;
 }
 .nav-div{
     width: 100%;
     padding: 0 50px;
 }
+.test{
+    background-color: white;
+    color: black;
+}
+.test ul li a{
+    color: black;
+}
+.test button{
+    background-color: #383632;
+    color: white;
+}
 
+#logo{
+    display:inline;
+}
+#dark-logo{
+    display: none;
+}
 
 .nav-link{
     font-size: 20px;
@@ -200,7 +219,7 @@ nav{
 .exp-cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
+    justify-items: center;
     grid-gap: 10px;
     margin-bottom: 50px;
     max-width: 1440px;
@@ -300,6 +319,7 @@ nav{
 .tabcontent {
     display: none;
     padding: 6px 12px;
+
 }
 .menus{
     font-family: Arial, Helvetica, sans-serif;
@@ -307,7 +327,7 @@ nav{
     grid-template-columns: 1fr 1fr;
     padding: 50px ;
     grid-gap: 30px;   
-    transition: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
 
 
 }
@@ -328,6 +348,7 @@ nav{
     color: #383632;
     font-family: "Schibsted Grotesk", serif;
     font-weight: 500;
+    transition: 0.5s ease-in-out;
 
 }
 
@@ -340,6 +361,7 @@ nav{
 
 .tab {
     overflow: hidden;f1;
+
 }
 
 

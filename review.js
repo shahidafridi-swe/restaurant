@@ -42,15 +42,15 @@ function reviewSlider(n){
     }
 
     if (n===1){
-        reviewSliderDiv.style.marginLeft=`0px`;
+        reviewSliderDiv.style.marginLeft=`0%`;
         document.getElementById("review-nav-1-img").classList.add("review-nav-active")
     }
     if(n===2){
-        reviewSliderDiv.style.marginLeft=`-540px`;
+        reviewSliderDiv.style.marginLeft=`-100%`;
         document.getElementById("review-nav-2-img").classList.add("review-nav-active")
     }
     if(n===3){
-        reviewSliderDiv.style.marginLeft=`-1080px`;
+        reviewSliderDiv.style.marginLeft=`-200%`;
         document.getElementById("review-nav-3-img").classList.add("review-nav-active")
 
     }

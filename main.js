@@ -13,3 +13,22 @@ function openMenu(evt, menuName) {
   }
   document.getElementById("defaultOpen").click();
 
+
+const nav = document.getElementById("nav");
+console.log(nav)
+
+window.onscroll = function() {myFunction()};
+let height = screen.height;
+
+function myFunction() {
+  if (document.documentElement.scrollTop > 100) {
+    document.getElementById("nav").className = "test";
+    document.getElementById("logo").style.display="none"
+    document.getElementById("dark-logo").style.display="block"
+    nav.style.position="fixed"
+  } else {
+    document.getElementById("nav").className = "";
+    document.getElementById("logo").style.display="block"
+    document.getElementById("dark-logo").style.display="none"
+  }
+}

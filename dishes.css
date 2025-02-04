@@ -6,10 +6,11 @@
     /* border: 1px solid gray; */
     margin-top: 50px !important;
     margin: auto;
-    padding: 10px;
+    padding: 10px 0;
     display: flex;
-    gap: 0;
     overflow: hidden;
+    /* max-width: 1340px; */
+    width: 100%;
     mask-image: linear-gradient(
         to right,
         transparent,
@@ -20,17 +21,20 @@
 
 .dishes-slider{
     display: flex;
-    width: 90%;
-    /* overflow-x: auto; */
+    width: 100% !important;
     margin: auto;
-    gap: 30px;
     transition: 1s;
-
+    flex-shrink: 0;
     
 }
 
 #slider-1{
-    transform: translate(-150px);
+    /* border: 1px dashed red; */
+    /* transform: translate(-12.5%); */
+    /* transform: translate(-25%); */
+    /* transform: translate(0%); */
+    
+    /* transform: translate(-150px); */
     /* transform: translate(-480px); */
     /* transform: translate(-810px); */
     /* transform: translate(-1140px); */
@@ -40,18 +44,28 @@
 
 }
 #slider-2{
-    transform: translate(305px);
+    /* border: 1px dashed aqua; */
+    /* transform: translate(12.5%); */
+    /* transform: translate(125%); */
+    /* transform: translate(400%); */
+
+
+    /* transform: translate(-8%); */
+    /* transform: translate(-28%); */
+
+    /* transform: translate(305px); */
     /* transform: translate(-25px); */
     /* transform: translate(-355px); */
     /* transform: translate(-685px); */
     /* transform: translate(-1015px); */
-    /* transform: translate(-1345px); */
+    /* transform: tra
+    nslate(-1345px); */
     /* transform: translate(-1675px); */
 
 }
 .slider-card{
-    min-width: 300px;
-    height: 300px;
+    min-width: 25%;
+    padding: 0 15px;
     transition: 1s;
 
 }
